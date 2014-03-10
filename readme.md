@@ -1,4 +1,4 @@
-###watch coffee files
+###Watch coffee files
 
 `gulp watch --require coffee-script/register`
 
