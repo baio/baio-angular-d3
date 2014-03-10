@@ -1,0 +1,32 @@
+.node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.node-person
+{
+    fill: rgb(204, 236, 230);
+}
+
+.node-organization
+{
+    fill: rgb(255, 237, 160);
+}
+
+.node-service
+{
+    fill: rgb(199, 233, 192);
+}
+
+.link {
+    stroke: #999;
+    stroke-opacity: .8;
+    /*stroke: #000;*/
+    stroke-width: 1.5px;
+}
+
+text {
+    font: 12px sans-serif;
+    pointer-events: none;
+    fill: black;
+}

@@ -1,0 +1,15 @@
+doctype html
+html(lang="ru", ng-app="app")
+    head
+        title qlanir graph
+        meta(charset="utf-8")
+        link(rel='stylesheet', href="app.css")
+        //
+            script(src="../bower_components/angular/angular.min.js")
+            script(src="../bower_components/angular-resource/angular-resource.min.js")
+            script(src="../bower_components/underscore/underscore.js")
+        script(src="../src/app.js")
+        script(src="src/app.js")
+    body(ng-controller="mainController")
+        h1 Graph example
+        div(d3-graph d3-graph-data="graph", d3-graph-load="loadGraph")
