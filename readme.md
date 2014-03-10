@@ -1,6 +1,6 @@
-###Run compilator and dev server
+###watch coffee files
 
-`gulp dev-server --require coffee-script/register`
+`gulp watch --require coffee-script/register`
 
 
 ###Build project
