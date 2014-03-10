@@ -1,3 +1,16 @@
-<!DOCTYPE html><html lang="ru" ng-app="app"><head><title>qlanir graph</title><meta charset="utf-8"><link rel="stylesheet" href="app.css"><!--script(src="../bower_components/angular/angular.min.js")
-script(src="../bower_components/angular-resource/angular-resource.min.js")
-script(src="../bower_components/underscore/underscore.js")--><script src="../src/app.js"></script><script src="src/app.js"></script></head><body ng-controller="mainController"><h1>Graph example</h1><div d3-graph d3-graph-data="graph" d3-graph-load="loadGraph"></div></body></html>
+<!DOCTYPE html>
+<html lang="ru" ng-app="app">
+<head><title>angular d3 examples</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="app.css">
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="../distr/baio-angular-d3.js"></script>
+    <script src="app.js"></script>
+</head>
+    <body ng-controller="mainController">
+        <h2>Graph example</h2>
+        <div d3-graph d3-graph-data="graph" d3-graph-load="loadGraph" style="width: 100%; height: 600px;"></div>
+    </body>
+</html>

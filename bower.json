@@ -1,7 +1,8 @@
 {
-  "name": "qlanir-graph",
+  "name": "baio-angular-3d",
   "version": "0.0.1",
   "dependencies": {
-    "underscore": "~1.6.0"
+    "underscore": "~1.6.0",
+    "d3": "~3.4.3"
   }
 }

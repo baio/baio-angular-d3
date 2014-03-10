@@ -5,4 +5,4 @@
 
 ###Build project
 
-`gulp build --require coffee-script/register`
+`gulp --require coffee-script/register`

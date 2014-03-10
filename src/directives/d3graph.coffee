@@ -1,6 +1,6 @@
 "use strict"
 
-app.directive 'd3Graph', (d3Service) ->
+d3app.directive 'd3Graph', (d3Service) ->
 
   restrict: 'EA'
 
@@ -35,7 +35,6 @@ app.directive 'd3Graph', (d3Service) ->
       .nodes(nodes)
       .links(links)
       .on "tick", ->
-          #console.log "tick", link
           link.attr("x1", (d) -> d.source.x)
           .attr("y1", (d) -> d.source.y)
           .attr("x2", (d) -> d.target.x)
@@ -44,13 +43,11 @@ app.directive 'd3Graph', (d3Service) ->
 
       _getLinkIndex = (d, index) ->
         idx = force.links().indexOf force.links().filter((f) -> f.attrs.key == d.attrs.key)[0]
-        console.log "links", idx, index
         idx = index if idx == -1
         idx
 
       _getNodeIndex = (d, index) ->
         idx = force.nodes().indexOf force.nodes().filter((f) -> f.attrs.id == d.attrs.id)[0]
-        console.log "nodes", idx, index
         idx = index if idx == -1
         idx
 
@@ -100,7 +97,6 @@ app.directive 'd3Graph', (d3Service) ->
         .attr("class", "text")
         .style("text-anchor", "middle")
         .text((d) -> d.attrs.label)
-
 
         link = svg.selectAll(".link")
         node = svg.selectAll("g")
