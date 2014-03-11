@@ -89,7 +89,7 @@ d3app.directive 'd3Graph', (d3Service) ->
 
         node
         .on("dblclick", (n) ->
-            scope.load n.attrs.id
+            scope.load n.attrs
           )
 
         node
